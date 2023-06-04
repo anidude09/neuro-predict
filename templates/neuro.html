@@ -109,6 +109,12 @@
     }
 
 
+    #more-info-btn {
+      background-color: blue;
+  /* Add more styles here */
+    }
+
+
  
   
 
@@ -139,6 +145,7 @@
     <p>Model: The model used for this project is a convolutional neural network (CNN). CNNs are a type of deep learning model that are well-suited for image classification tasks. The CNN model used for this project was trained on a large dataset of brain MRIs.</p>
     <p>Number of Images: The number of images in the dataset is 6400. The images are divided into 4000 training images and 2400 test images.</p>
     <p>Classes of Images: The dataset contains four classes of images: normal, very-mild, mild, and moderate Alzheimer. The images in each class are of varying sizes, poses, and imaging protocols.</p>
+    <button type="menu" id="more-info-btn" onclick="redirectInfo()">More information</button>
   </section>
   <section>
     <h2>Upload MRI Image</h2>
@@ -188,7 +195,9 @@
         }
     });
 
-
+    function redirectInfo(){
+      window.location.href = "/more-info";
+    }
 
 
 

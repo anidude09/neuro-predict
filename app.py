@@ -102,3 +102,8 @@ def info():
 @app.route('/device-info', methods = ['GET','POST'])
 def device_info():
     return render_template('device.html')
+
+
+@app.route('/more-info', methods =['GET'])
+def more_info():
+    return render_template('extra.html')
